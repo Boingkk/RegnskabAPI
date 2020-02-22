@@ -6,11 +6,16 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Pomelo.EntityFrameworkCore.MySql.Storage;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+
+using RegnskabAPI.mysql;
 
 namespace RegnskabAPI
 {
@@ -26,14 +31,40 @@ namespace RegnskabAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors(options =>
+
+                       options.AddDefaultPolicy(p => p.AllowAnyOrigin()
+                                                   .AllowAnyMethod()
+                                                   .AllowAnyHeader()));
+
+
+
+
+
+
+
             services.AddControllers();
 
-
             // Register the Swagger generator, defining 1 or more Swagger documents
+
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Regnskab", Version = "v1" });
             });
+
+            // replace "YourDbContext" with the class name of your DbContext
+            services.AddDbContextPool<holmsennels_dk_dbContext>(options => options
+                // replace with your connection string
+                .UseMySql("server=mysql26.unoeuro.com;port=3306;user=holmsennels_dk;password=xwft2gcy;database=holmsennels_dk_db;", mySqlOptions => mySqlOptions
+                    // replace with your Server Version and Type
+                    .ServerVersion(new ServerVersion(new Version(8, 0, 19), ServerType.MySql))
+            ));
+
+
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,8 +86,8 @@ namespace RegnskabAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
+            //            app.UseHttpsRedirection();
+            app.UseCors();
             app.UseRouting();
 
             app.UseAuthorization();

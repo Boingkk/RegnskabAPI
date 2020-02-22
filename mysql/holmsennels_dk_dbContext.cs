@@ -6,10 +6,10 @@ namespace RegnskabAPI.mysql
 {
     public partial class holmsennels_dk_dbContext : DbContext
     {
-        public holmsennels_dk_dbContext()
+/*        public holmsennels_dk_dbContext()
         {
         }
-
+*/
         public holmsennels_dk_dbContext(DbContextOptions<holmsennels_dk_dbContext> options)
             : base(options)
         {
