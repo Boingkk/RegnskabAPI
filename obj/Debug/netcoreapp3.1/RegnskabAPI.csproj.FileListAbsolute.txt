@@ -49,3 +49,8 @@ C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\MySqlConnector.
 C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\spand\Documents\Git\regnskabAPI\obj\Debug\netcoreapp3.1\RegnskabAPI.MvcApplicationPartsAssemblyInfo.cs
