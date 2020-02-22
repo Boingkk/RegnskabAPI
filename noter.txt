@@ -1,0 +1,3 @@
+noter
+https://www.learnentityframeworkcore.com/dbcontext
+

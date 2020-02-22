@@ -1,0 +1,20 @@
+noter mysql scaffolding 
+
+https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework-core-scaffold-example.html
+
+dotnet ef dbcontext scaffold "server=localhost;port=3306;user=root;password=mypass;database=sakila" MySql.Data.EntityFrameworkCore -o sakila -f
+
+
+dotnet ef dbcontext scaffold "server=mysql26.unoeuro.com;port=3306;user=holmsennels_dk;password=xwft2gcy;database=holmsennels_dk_db" MySql.Data.EntityFrameworkCore -o RegnskabSQL   -t Kontostam -f
+
+xmysql -h mysql26.unoeuro.com -u holmsennels_dk -p xwft2gcy -d holmsennels_dk_db -s c:\Users\spand\Documents\Git\astridkonto\node_modules\xmlsql
+
+Scaffold-DbContext "server=mysql26.unoeuro.com;port=3306;user=holmsennels_dk;password=xwft2gcy;database=holmsennels_dk_db" MySql.Data.EntityFrameworkCore -OutputDir RegnskabSQL -f -t Kontostam
+
+
+dotnet tool install -g dotnet-ef
+
+
+
+https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql
+dotnet ef dbcontext scaffold "server=mysql26.unoeuro.com;port=3306;user=holmsennels_dk;password=xwft2gcy;database=holmsennels_dk_db" Pomelo.EntityFrameworkCore.MySql -o mysql -t Kontostam -f
