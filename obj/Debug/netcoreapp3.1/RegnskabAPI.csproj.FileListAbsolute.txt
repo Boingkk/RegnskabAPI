@@ -35,7 +35,6 @@ C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\System.Configur
 C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\spand\Documents\Git\regnskabAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\spand\Documents\Git\regnskabAPI\obj\Debug\netcoreapp3.1\RegnskabAPI.csprojAssemblyReference.cache
 C:\Users\spand\Documents\Git\regnskabAPI\obj\Debug\netcoreapp3.1\RegnskabAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\spand\Documents\Git\regnskabAPI\obj\Debug\netcoreapp3.1\RegnskabAPI.AssemblyInfoInputs.cache
 C:\Users\spand\Documents\Git\regnskabAPI\obj\Debug\netcoreapp3.1\RegnskabAPI.AssemblyInfo.cs
